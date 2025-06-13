@@ -20,7 +20,7 @@ export default function useScreenSize(smallScreenSizeThreshold) {
             // cleanup task
             window.removeEventListener("resize", checkScreenSize);
         };
-    }, []);
+    }, [smallScreenSizeThreshold]);
 
     return onSmallDevice;
 }
